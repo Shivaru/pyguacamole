@@ -1,0 +1,61 @@
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "POST /guacamole/api/tokens HTTP/1.1" 200 None
+DEBUG:guacamole:guac.listConnections calling: http://10.3.47.21:32773/guacamole/api/session/data/postgresql/connections
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "GET /guacamole/api/session/data/postgresql/connections?token=EA0AE62D68D207BD2B04C37558CDC0FCA30998F0CA91147AF18C298AB0E82674 HTTP/1.1" 200 None
+DEBUG:guacamole:guac.listConnections calling: http://10.3.47.21:32773/api/session/data/postgresql/userGroups
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "GET /api/session/data/postgresql/userGroups?token=EA0AE62D68D207BD2B04C37558CDC0FCA30998F0CA91147AF18C298AB0E82674 HTTP/1.1" 404 682
+DEBUG:guacamole:guac.listConnections calling: http://10.3.47.21:32773/guacamole/api/session/data/postgresql/connections
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "GET /guacamole/api/session/data/postgresql/connections?token=EA0AE62D68D207BD2B04C37558CDC0FCA30998F0CA91147AF18C298AB0E82674 HTTP/1.1" 200 None
+DEBUG:guacamole:guac.listConnections calling: http://10.3.47.21:32773/api/session/data/postgresql/userGroups
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "GET /api/session/data/postgresql/userGroups?token=EA0AE62D68D207BD2B04C37558CDC0FCA30998F0CA91147AF18C298AB0E82674 HTTP/1.1" 404 682
+DEBUG:guacamole:guac.listConnections calling: http://10.3.47.21:32773/guacamole/api/session/data/postgresql/connections
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "GET /guacamole/api/session/data/postgresql/connections?token=EA0AE62D68D207BD2B04C37558CDC0FCA30998F0CA91147AF18C298AB0E82674 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "POST /guacamole/api/tokens HTTP/1.1" 200 None
+DEBUG:guacamole:guac.listConnections calling: http://10.3.47.21:32773/guacamole/api/session/data/postgresql/connections
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "GET /guacamole/api/session/data/postgresql/connections?token=DD25D269E421581676AADF0A570E91D2F898F38B69E9D978950EE196DD577B1C HTTP/1.1" 200 None
+DEBUG:guacamole:guac.listConnections calling: http://10.3.47.21:32773/api/session/data/postgresql/userGroups
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "GET /api/session/data/postgresql/userGroups?token=DD25D269E421581676AADF0A570E91D2F898F38B69E9D978950EE196DD577B1C HTTP/1.1" 404 682
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "POST /guacamole/api/tokens HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "POST /guacamole/api/tokens HTTP/1.1" 200 None
+DEBUG:guacamole:guac.listConnections calling: http://10.3.47.21:32773/guacamole/api/session/data/postgresql/connections
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "GET /guacamole/api/session/data/postgresql/connections?token=1469355F8F1CCE46880C764BCD179EFCD020F65FE973D7B7997A61F4CF442C44 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "POST /guacamole/api/tokens HTTP/1.1" 200 None
+DEBUG:guacamole1:guac.listConnections calling: http://10.3.47.21:32773/guacamole/api/session/data/postgresql/connections
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "GET /guacamole/api/session/data/postgresql/connections?token=1808E5A66C489DD88036511609535FBBEB9BE1FCD59D8450978698F781D0FD07 HTTP/1.1" 200 None
+DEBUG:guacamole1:guac.listConnectionGroups calling: http://10.3.47.21:32773/api/session/data/postgresql/connectionGroups
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "GET /api/session/data/postgresql/connectionGroups?token=1808E5A66C489DD88036511609535FBBEB9BE1FCD59D8450978698F781D0FD07 HTTP/1.1" 404 682
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "POST /guacamole/api/tokens HTTP/1.1" 200 None
+DEBUG:guacamole1:guac.listConnections calling: http://10.3.47.21:32773/guacamole/api/session/data/postgresql/connections
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "GET /guacamole/api/session/data/postgresql/connections?token=2334921825D0143AF3A6BB2CBEDA6CFB70C639C781619B40ACF09D7498FA33D4 HTTP/1.1" 200 None
+DEBUG:guacamole1:guac.listConnectionGroups calling: http://10.3.47.21:32773/api/session/data/postgresql/connectionGroups
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "GET /api/session/data/postgresql/connectionGroups?token=2334921825D0143AF3A6BB2CBEDA6CFB70C639C781619B40ACF09D7498FA33D4 HTTP/1.1" 404 682
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "POST /guacamole/api/tokens HTTP/1.1" 200 None
+DEBUG:guacamole1:guac.listConnectionGroups calling: http://10.3.47.21:32773/api/session/data/postgresql/connectionGroups
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "GET /api/session/data/postgresql/connectionGroups?token=19507B7E314ADF5424A369C4B41CD7191838397EF2B743BD0789E87A8D2C0162 HTTP/1.1" 404 682
+DEBUG:guacamole1:guac.listConnectionGroups calling: http://10.3.47.21:32773/api/session/data/postgresql/connectionGroups
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "GET /api/session/data/postgresql/connectionGroups?token=19507B7E314ADF5424A369C4B41CD7191838397EF2B743BD0789E87A8D2C0162 HTTP/1.1" 404 682
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "POST /guacamole/api/tokens HTTP/1.1" 200 None
+DEBUG:guacamole1:guac.listConnectionGroups calling: http://10.3.47.21:32773/api/session/data/postgresql/connectionGroups
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): 10.3.47.21:32773
+DEBUG:urllib3.connectionpool:http://10.3.47.21:32773 "GET /api/session/data/postgresql/connectionGroups?token=29E812522545544608EDDE9215DCA9FC5259AD7B341CF045ABF56A0A8CB9B57C HTTP/1.1" 404 682

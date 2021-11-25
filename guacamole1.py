@@ -1,9 +1,10 @@
 """
+FORK
 Allow sync with Guacamole using their undocumented HTTP REST API.
 """
 import sys
 import logging
-import pprint
+from pprintpp import pprint as pp
 import urllib.parse
 import requests
 
@@ -89,6 +90,7 @@ class Guac():
 		log.debug("guac.listConnections calling: %s" % url)
 		r = requests.get(url,headers=self.headers,params={'token':self.token})
 		return r.json()
+
 	def listActiveConnections(self):
 		"""list all connections.
 		requires 'Administer system:' permissions. without these, will always return an empty {}.
@@ -104,6 +106,37 @@ class Guac():
 		log.debug("guac.listActiveConnections calling: %s" % url)
 		r = requests.get(url,headers=self.headers,params={'token':self.token})
 		return r.json()
+
+# NEW	
+	def listConnectionGroups(self):	
+		"""list all connection groups. """
+		if not self.token:
+			raise Exception("Unauthenticated, use auth(user,pass) first.")
+		url = self.urljoin(self.url,'/api/session/data/{0}/connectionGroups/ROOT/tree'.format(self.dataSource))
+		log.debug("guac.listConnectionGroups calling: %s" % url)
+		r = requests.get(url,headers=self.headers,params={'token':self.token})
+		return r.json()
+	
+# NEW
+	def listUserGroups(self):	
+		"""list all groups.
+		requires 'Administer system:' permissions. without these, will always return an empty {}.
+		returns a dictionary of connections by connection ID.
+		i.e.
+		r['44'] is connection identifier #44 (so you want d.keys() to get a list of the connections)
+		r['44'] will return something like:
+		 {'name': 'guacuserprod-cperez2_yumaunion', 'identifier': '44', 'parentIdentifier': 'ROOT', 'protocol': 'rdp', 'attributes': {'guacd-encryption': None, 'failover-only': None, 'weight': None, 'max-connections': None, 'guacd-hostname': None, 'guacd-port': None, 'max-connections-per-user': None}, 'activeConnections': 0}
+		"""		
+		if not self.token:
+			raise Exception("Unauthenticated, use auth(user,pass) first.")
+		url = self.urljoin(self.url,'/api/session/data/{0}/userGroups'.format(self.dataSource))
+		log.debug("guac.listUserGroups calling: %s" % url)
+		r = requests.get(url,headers=self.headers,params={'token':self.token})
+		return r.json()
+	
+
+
+
 
 	def connectionDetails(self,connectionIdentifier):
 		"""get details about a particular connection
@@ -191,6 +224,9 @@ class Guac():
 		self.dataSource = d['dataSource']
 		self.availableDataSources = d['availableDataSources']
 		return self.token
+
+
+
 
 def main(args):
 	return 0
